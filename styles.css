@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .parallax {
+    perspective: 3px;
+    height: 100%;
+  }
+  
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-style: preserve-3d;
+  }
+  
+  .parallax__layer--base {
+    transform: translateZ(0);
+  }
+  
+  .parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+  }
+  
+  .parallax__cover {
+    background: #2D112B;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    z-index: 2;
+  }
+  
+  .parallax__image {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+  }
