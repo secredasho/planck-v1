@@ -15,18 +15,20 @@ let monkeyMart = "https://images-opensocial.googleusercontent.com/gadgets/ifr?ur
 
 const searchInput = document.getElementById('search-input');
 const results = document.getElementById('results');
+const buttonsContainer = document.getElementById('buttons-container');
 
 const elements = [
-  { id: 'tING', name: 'There is no game' },
-  { id: 'element2', name: 'Element 2' },
-  { id: 'element3', name: 'Element 3' },
-  { id: 'element4', name: 'Element 4' },
-  { id: 'element5', name: 'Element 5' },
+  { id: 'button1', name: 'Button 1' },
+  { id: 'button2', name: 'Button 2' },
+  { id: 'button3', name: 'Button 3' },
+  { id: 'button4', name: 'Button 4' },
+  { id: 'button5', name: 'Button 5' },
 ];
 
 function filter() {
   const value = searchInput.value.toLowerCase();
   results.innerHTML = '';
+  buttonsContainer.innerHTML = '';
   if (!value) return;
   const matches = elements.filter(element => element.name.toLowerCase().includes(value));
   if (!matches.length) return;
@@ -34,9 +36,18 @@ function filter() {
     const li = document.createElement('li');
     li.textContent = match.name;
     li.addEventListener('click', () => {
-      window.location.href = `#${match.id}`;
+      const button = document.getElementById(match.id);
+      button.focus();
     });
     results.appendChild(li);
   });
+  matches.forEach(match => {
+    const button = document.createElement('button');
+    button.id = match.id;
+    button.textContent = match.name;
+    button.addEventListener('click', () => {
+      // Handle button click event
+    });
+    buttonsContainer.appendChild(button);
+  });
 }
-
