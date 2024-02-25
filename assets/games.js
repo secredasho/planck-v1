@@ -14,7 +14,8 @@ function openWindowWithIframe() {
     iframe.style.width = '100%';
     win.document.body.appendChild(iframe);
 }
-function gameSorterTing() {
-    let game = thereIsNoGame
+function gameSorterSlope() {
+    let game = slope
     openWindowWithIframe()
 }
+
