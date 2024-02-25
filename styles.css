@@ -1,3 +1,7 @@
+  .blackheader-title {
+    color: black;
+    text-align: center;
+  }
   .navigation button {
   background-color: #4CAF50;
   padding: 10px 20px;
@@ -50,7 +54,7 @@
   
   h1 {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 2rem;
   }
   
