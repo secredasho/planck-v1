@@ -6,16 +6,4 @@ let cookieClicker = "https://images-opensocial.googleusercontent.com/gadgets/ifr
 let elasticMorty = "https://d21u3ic0kp9e91.cloudfront.net/elasticman/0/index.html"
 let pixelShooter = "https://94bfktj403i6m18as4vkvtreqd0ohci4-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://274019683-173520394482650759.preview.editmysite.com/uploads/b/139890129-131715539788281629/files/ps.xml"
 let monkeyMart = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/mm.xml"
-function openWindowWithIframe() {
-    const win = window.open('', 'mywin', 'width=600,height=600');
-    const iframe = win.document.createElement('iframe');
-    iframe.src = game;
-    iframe.style.height = '100%';
-    iframe.style.width = '100%';
-    win.document.body.appendChild(iframe);
-}
-function gameSorterSlope() {
-    let game = slope
-    openWindowWithIframe()
-}
 
