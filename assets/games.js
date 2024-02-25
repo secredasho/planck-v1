@@ -18,24 +18,3 @@ function gameSorterTing() {
     game.replace(thereIsNoGame)
     openWindowWithIframe()
 }
-function gameSorterTing() {
-    
-}
-function gameSorterTing() {
-    
-}
-function gameSorterTing() {
-    
-}
-function gameSorterTing() {
-    
-}
-function gameSorterTing() {
-    
-}
-function gameSorterTing() {
-    
-}
-function gameSorterTing() {
-    
-}
