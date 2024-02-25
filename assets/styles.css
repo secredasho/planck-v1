@@ -3,6 +3,7 @@
     border: grey;
     border-width: 5px;
     font-size: 35px;
+    margin: 0 auto;
   }
   .blackheader-title {
     color: black;
