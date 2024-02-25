@@ -15,6 +15,6 @@ function openWindowWithIframe() {
     win.document.body.appendChild(iframe);
 }
 function gameSorterTing() {
-    game.replace(thereIsNoGame)
+    let game = thereIsNoGame
     openWindowWithIframe()
 }
