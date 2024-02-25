@@ -1,13 +1,20 @@
-  .games-button {
+  .small-button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
+  line-height: 1.5;
   border-radius: 4px;
   background-color: #4CAF50;
   color: #fff;
   cursor: pointer;
+  min-width: 5rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   }
-  .games-button:hover {
-    background-color: #3e8e41;
+
+  .small-button:hover {
+  background-color: #3e8e41;
   }
   input {
     align-content: center;
