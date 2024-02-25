@@ -1,8 +1,8 @@
   input {
     align-content: center;
     border: grey;
-    border: 15px;
-    font-size: 20px;
+    border-width: 5px;
+    font-size: 35px;
   }
   .blackheader-title {
     color: black;
