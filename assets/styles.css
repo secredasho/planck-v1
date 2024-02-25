@@ -1,3 +1,14 @@
+  .games-button {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  }
+  .games-button:hover {
+    background-color: #3e8e41;
+  }
   input {
     align-content: center;
     border: grey;
