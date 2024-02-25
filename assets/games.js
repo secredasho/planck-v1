@@ -15,7 +15,9 @@ iframe.style.width = '800px';
 tab.document.body.appendChild(iframe);
 }
 function gameSorterTing() {
+    let game = thereIsNoGame
     openTabWithIframe()
+    console.log("clicked")
 }
 function gameSorterTing() {
     
