@@ -2,22 +2,6 @@
     color: black;
     text-align: center;
   }
-  .navigation button {
-  background-color: #4CAF50;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  }
-
-  .navigation button:hover {
-  background-color: #3e8e41;
-  }
   button {
     background-color: #007acc;
     color: white;
