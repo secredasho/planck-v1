@@ -11,43 +11,43 @@ let monkeyMart = "https://images-opensocial.googleusercontent.com/gadgets/ifr?ur
 
 
 
-
-
 const searchInput = document.getElementById('search-input');
 const results = document.getElementById('results');
-const buttonsContainer = document.getElementById('buttons-container');
-
-const elements = [
-  { id: 'button1', name: 'Button 1' },
-  { id: 'button2', name: 'Button 2' },
-  { id: 'button3', name: 'Button 3' },
-  { id: 'button4', name: 'Button 4' },
-  { id: 'button5', name: 'Button 5' },
-];
+const buttonsContainer = document.getElementById('buttons');
+const buttons = buttonsContainer.getElementsByTagName('button');
 
 function filter() {
   const value = searchInput.value.toLowerCase();
   results.innerHTML = '';
-  buttonsContainer.innerHTML = '';
-  if (!value) return;
-  const matches = elements.filter(element => element.name.toLowerCase().includes(value));
+  if (!value) {
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].style.display = 'none';
+    }
+    return;
+  }
+  const matches = [];
+  for (let i = 0; i < buttons.length; i++) {
+    if (buttons[i].textContent.toLowerCase().includes(value)) {
+      matches.push(buttons[i]);
+    }
+  }
   if (!matches.length) return;
+  results.innerHTML = '';
   matches.forEach(match => {
     const li = document.createElement('li');
-    li.textContent = match.name;
+    li.textContent = match.textContent;
     li.addEventListener('click', () => {
-      const button = document.getElementById(match.id);
-      button.focus();
+      match.focus();
     });
     results.appendChild(li);
   });
-  matches.forEach(match => {
-    const button = document.createElement('button');
-    button.id = match.id;
-    button.textContent = match.name;
-    button.addEventListener('click', () => {
-      // Handle button click event
-    });
-    buttonsContainer.appendChild(button);
-  });
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove('show');
+    for (let j = 0; j < matches.length; j++) {
+      if (buttons[i] === matches[j]) {
+        buttons[i].classList.add('show');
+        break;
+      }
+    }
+  }
 }
