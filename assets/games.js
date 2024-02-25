@@ -10,8 +10,8 @@ function openWindowWithIframe() {
     const win = window.open('', 'mywin', 'width=600,height=600');
     const iframe = win.document.createElement('iframe');
     iframe.src = game;
-    iframe.style.height = '500px';
-    iframe.style.width = '500px';
+    iframe.style.height = '100%';
+    iframe.style.width = '100%';
     win.document.body.appendChild(iframe);
 }
 function gameSorterTing() {
