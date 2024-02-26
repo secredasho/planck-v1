@@ -1,4 +1,4 @@
-console.log("v1.0.8 script working")
+console.log("v1.1.0 script working")
 let game = " "
 let thereIsNoGame = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://590384729-104728463944275026.preview.editmysite.com/uploads/b/139890129-446136497302390429/files/ting.xml"
 let slope = "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@843c1a10f4bf78019b513ea7a8a8c3146f3dfa59/2slope.xml"
